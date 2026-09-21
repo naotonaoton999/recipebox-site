@@ -1,36 +1,26 @@
-RecipeBox 公開用サイト（GitHub Pages向け）
+レシピの保存庫 公開用サイト（GitHub Pages向け）
+
+設定済み
+- 公開アプリ名: レシピの保存庫
+- 開発者名: Naoto Shirasu
+- 問い合わせ用メール: recipebox.support999@gmail.com
 
 含まれるファイル
-- index.html      : トップページ
-- privacy.html    : プライバシーポリシー
-- support.html    : サポートページ
-- style.css       : 共通スタイル
+- index.html
+- privacy.html
+- support.html
+- style.css
+- README_GITHUB_PAGES.txt
 
-公開前に必ず置換する箇所
-1. [開発者名]
-2. [問い合わせ用メールアドレス]
+既存のGitHub Pagesサイトを更新する手順
+1. GitHubの公開用リポジトリを開く
+2. index.html / privacy.html / support.html / style.css を、このZIP内の同名ファイルで置き換える
+3. Commit changes を実行する
+4. 数分後、公開サイトを再読み込みして表記を確認する
 
-おすすめの公開方法（GitHub Pages）
-1. GitHubで公開リポジトリを新規作成
-   例: recipebox-site
-2. このフォルダ内の4ファイルをリポジトリ直下へアップロード
-3. GitHubの Settings → Pages を開く
-4. Build and deployment で
-   Source: Deploy from a branch
-   Branch: main / root
-   を指定して保存
-5. 数分後に公開URLが発行されます
+GitHubのリポジトリ名やPages URLは recipebox-site のままで問題ありません。
+Xcodeプロジェクト内部の RecipeBox という名称も現時点では変更不要です。
 
-想定URL例
-https://あなたのGitHubユーザー名.github.io/recipebox-site/
-
-App Store Connectでは
-- Privacy Policy URL:
-  https://.../privacy.html
-- Support URL:
-  https://.../support.html
-を使用できます。
-
-注意
-- RecipeBoxアプリ本体のSwiftソースコードをこの公開リポジトリへ置く必要はありません。
-- GitHub Pages用リポジトリには、この案内サイトのファイルだけを置けば十分です。
+App Store Connect用
+- Privacy Policy URL: 現在のGitHub Pages URL + /privacy.html
+- Support URL: 現在のGitHub Pages URL + /support.html
